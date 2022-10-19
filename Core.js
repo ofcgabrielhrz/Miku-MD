@@ -712,7 +712,7 @@ user.afkReason = ''
 
 
 if (m.mtype === 'groupInviteMessage') {
-teks = `I can't join the group untill my *Owner* ask me to join. Type *-owner* to get owner number and ask him.`
+teks = `Aku Belum Bisa Join Group Sama *Owner* Tanya Ke Owner Dulu Ya Kak. Type *-owner* Untuk Dapatkan Numer Owner Dan Tanya Dia .`
 sendOrder(m.chat, teks, "5123658817728409", fs.readFileSync('./Assets/pic10.jpg'), `${watermark}`, `${BotName}`, "916909137213@s.whatsapp.net", "AR7zJt8MasFx2Uir/fdxhkhPGDbswfWrAr2gmoyqNZ/0Wg==", "99999999999999999999")
 }
 
@@ -1183,11 +1183,11 @@ let cron = require('node-cron')
                                },
                   message: { 
                                 "videoMessage": { 
-                                "title": `Miku`,
-                                "h": `Miku`,
+                                "title": `SkySurfers`,
+                                "h": `Skysurfers`,
                                 'duration': '99999', 
                                 'gifPlayback': 'true', 
-                                'caption': `Fantox`,
+                                'caption': `GabrielHrz`,
                                 'jpegThumbnail': fs.readFileSync('./Assets/miku.mp4')
                                        }
                                       }
@@ -1332,7 +1332,7 @@ const ftroli = {
 
 
     const menulist = `
-    Konichiwa ${pushname} dear 👋. I am ${global.BotName}, a bot developed by: Fantox to take your WhatsApp usage into next level.
+    Konichiwa ${pushname} dear 👋. I am ${global.BotName}, a bot developed by: GabrielHrz to take your WhatsApp usage into next level.
         
        「 System Info 」
     
@@ -1340,7 +1340,7 @@ const ftroli = {
     Up Time : ${runtime(process.uptime())}
     Bot Name : ${global.BotName}
     Owner Name : ${global.OwnerName}
-    𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺 : Amazon AWS
+    𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺 : Digital Ocean
     𝗧𝗼𝘁𝗮𝗹 𝗨𝘀𝗲𝗿 : ${Object.keys(global.db.users).length}
     
     
@@ -1362,7 +1362,7 @@ const ftroli = {
     
     Type *-menu* or press any button below to start using *${global.BotName}*
     
-    ©️ *${global.BotName}* All Rights Reserved by: *Fantox*
+    ©️ *${global.BotName}* All Rights Reserved by: *SkySurfers*
     `
         const qtod = m.quoted? "true":"false"
         
@@ -1391,7 +1391,7 @@ switch(command) {
     buttons: buttons,
     headerType: 4,
     /*contextInfo:{externalAdReply:{
-    title:"Powered by Fantox",
+    title:"Powered by GabrielHrz",
     body: " ", 
     thumbnail: fs.readFileSync("Assets/pic2.jpg"),
     mediaType:1,
@@ -1477,12 +1477,12 @@ replay('This Group has been *unbanned* from using me!')
 
 case 'support': case 'supportgc':
     
-    reply(`*My developer's group:* http://gg.gg/MikuSupport`)
+    reply(`*My developer's group:* https://chat.whatsapp.com/Frk359WrUtrAGNY7DY0Stf`)
     break
 
 case 'repo': case 'botrepo':
     
-    reply(`*My Source Code:* https://github.com/FantoX001/Miku-MD`)
+    reply(`*Forum:* https://skysurfers.xyz/`)
     break
 
 case 'nsfwmenu':
@@ -3322,9 +3322,6 @@ case 'music': case 'play': case 'song': case 'ytplay': {
     let search = await yts(text)
     let anu = search.videos[0]
     const ytmp3play = await YT.mp3(anu.url)
-    let stats = fs.statSync(ytmp3play.path)
-    let fileSizeInBytes = stats.size;
-    if (fileSizeInBytes > 60000000) return reply('Cant send audios longer than 60 MB!')
     
  await Miku.sendMessage(from, {document: fs.readFileSync(ytmp3play.path),fileName: anu.title + '.mp3',mimetype: 'audio/mpeg',}, {quoted:m})
  }
@@ -3338,9 +3335,7 @@ case 'music': case 'play': case 'song': case 'ytplay': {
     let search = await yts(text)
     let anu = search.videos[0]
     const ytmp4play = await YT.mp4(anu.url)
-    let vidduration =ytmp4play.duration;
-    if (vidduration > 1800) return reply('Cant send videos longer than *30 min*')
- Miku.sendMessage(from, {video:{url:ytmp4play.videoUrl}, mimetype:"video/mp4", caption:anu.title+' By *Miku MD*',}, {quoted:m})
+ Miku.sendMessage(from, {video:{url:ytmp4play.videoUrl}, mimetype:"video/mp4", caption:anu.title+' By *SkySufers MD*',}, {quoted:m})
  }
  break
 
@@ -3387,9 +3382,6 @@ case 'music': case 'play': case 'song': case 'ytplay': {
     if (isBanChat) return reply(mess.bangc)
     const YT=require('./lib/ytdlcore')
     const ytmp3play2 = await YT.mp3(text)
-    let stats = fs.statSync(ytmp3play2.path)
-    let fileSizeInBytes = stats.size;
-    if (fileSizeInBytes > 60000000) return reply('Cant send audios longer than 60 MB!')
     
  await Miku.sendMessage(from, {document: fs.readFileSync(ytmp3play2.path),fileName:'Miku_YTmp3_Downloader.mp3',mimetype: 'audio/mpeg',}, {quoted:m})
  }
@@ -3400,9 +3392,7 @@ case 'music': case 'play': case 'song': case 'ytplay': {
  if (isBanChat) return reply(mess.bangc)
  const YT=require('./lib/ytdlcore')
     const ytmp4play2 = await YT.mp4(text)
-    let vidduration =ytmp4play2.duration;
-    if (vidduration > 1800) return reply('Cant send videos longer than *30 min*')
- Miku.sendMessage(from, {video:{url:ytmp4play2.videoUrl}, mimetype:"video/mp4", caption:'Downloaded by *Miku MD*',}, {quoted:m})
+ Miku.sendMessage(from, {video:{url:ytmp4play2.videoUrl}, mimetype:"video/mp4", caption:'Downloaded by *SkySurfers MD*',}, {quoted:m})
  }
  break
 
@@ -4780,7 +4770,7 @@ qr, say, translate, fliptext, toletter
 
 
  『  *${global.BotName}*  』
- Powered by: *Fantox*
+ Powered by: *GabrielHrz*
 
  🔰 To use any of these commands type 
  " *${prefix}<Command name>* ".

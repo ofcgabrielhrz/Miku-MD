@@ -3,19 +3,19 @@ const chalk = require("chalk")
 
 global.available = true
 global.autoReadGc = true
-global.autoReadAll = false
+global.autoReadAll = true
 global.antitags = true
 
 
-global.Owner = ['918101187835']
-global.OwnerNumber = ['918101187835']
-global.ownertag = ['918101187835']
-global.BotName = "Miku"
-global.packname = "Miku bot"
-global.author = "By: Fantox"
-global.OwnerName = "Fantox"
-global.BotSourceCode = "https://github.com/FantoX001/Miku-MD"
-global.SupportGroupLink = "https://chat.whatsapp.com/JcBzjRIxM5UHfuJbt0KrWt"
+global.Owner = ['62859106670631']
+global.OwnerNumber = ['62859106670631']
+global.ownertag = ['62859106670631']
+global.BotName = "SkySurfersBOT"
+global.packname = "SkySurfersBOT"
+global.author = "By: GabrielHrz"
+global.OwnerName = "GabrielHrz"
+global.BotSourceCode = "https://skysurfers.xyz/"
+global.SupportGroupLink = "https://chat.whatsapp.com/Frk359WrUtrAGNY7DY0Stf"
 global.sessionName = "session"
 
 // Prefix //
@@ -23,11 +23,11 @@ global.sessionName = "session"
 global.prefa = ['-'] 
 
 
-global.location = "West Bengal, India"
+global.location = "Jakarta, Indonesia"
 global.reactmoji = "❤️"
 global.themeemoji = "💖"
-global.vidmenu = { url: 'https://c.tenor.com/YGuLegQWubwAAAPo/miku-nakano-gotoubun-no-hanayome.mp4' }
-global.websitex = "https://github.com/FantoX001"
+global.vidmenu = { url: 'https://gabrielhrz.my.id/crot/pain.mp4' }
+global.websitex = "https://skysurfers.xyz/"
 global.lolhuman = "KaysaS"
 
 
@@ -59,17 +59,17 @@ global.ntilink = []
 
 global.mess = {
     jobdone: 'Job done...',
-    useradmin: 'Sorry, only *Group Admins* can use this command *Baka*!',
+    useradmin: 'Maaf, Hanya *Admins Group* Yang Dapat Menggunakan Perintah Ini *Baka*!',
     botadmin: 'Sorry, i cant execute this command without being an *Admin* of this group.',
-    botowner: 'Only my *Owner* can use this command, Baka!',
-    grouponly: 'This command is only made for *Groups*, Baka!',
-    privateonly: 'This command is only made for *Private Chat*, Baka!',
-    botonly: 'Only the *Bot itself* can use this command!',
+    botowner: 'Hanya my *Owner* Yang Bisa Menggunakan Perintah Ini, Baka!',
+    grouponly: 'Perintah Ini Hanya Digunakan Di *Groups*, Baka!',
+    privateonly: 'Perintah Ini Hanya Di Gunakan Di *Private Chat*, Baka!',
+    botonly: 'Hanya the *Bot itself* Yang Bisa Gunakan Perintah Ini!',
     waiting: 'Chotto Matte...',
     nolink: 'Please provide me *link*, Baka!',
     error: 'An error occurd!',
-    banned: 'You are *Banned* fron using commands!',
-    bangc: 'This Group is *Banned* from using Commands!',
+    banned: 'Kamu Telah Di *Banned* Melalui Perintah!',
+    bangc: 'Grouo Ini telah Di *Banned* Melalui Perintah!',
     nonsfw: 'Dont be a pervert Baka! This is not a NSFW enabled group!'
     
 }
